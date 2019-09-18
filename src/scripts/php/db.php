@@ -1,12 +1,14 @@
 <?php
-    $conn = mysqli_connect(
-        'localhost',
-        'root',
-        '',
-        'abc'
-    );
-
-    /*if(isset($conn)){
-        echo "DB IS CONNECT";
-    }*/
+    function Connect(){
+        if(!($link = mysqli_connect("localhost","root",""))){
+            echo "Error de conexión";
+            exit();
+        }
+        if(!mysqli_select_db($link,"abc")){
+            echo "Error al seleccionar la base de datos";
+            exit();
+        }
+        return $link;
+    }
+    Connect();
 ?>

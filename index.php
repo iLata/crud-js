@@ -20,8 +20,8 @@
                     <div class="form-group">
                         <input type="text" name="direccion" id="direccion" class="form-control" placeholder="Dirección de la persona">
                     </div>
-                    <button id="insertUser" type="button" class="btn btn-success btn-block">Guardar</button>
                 </form>
+                <button id="insertUser" type="button" class="btn btn-success btn-block">Guardar</button>
             </div>
         </div>
         <div class="col-md-8">
